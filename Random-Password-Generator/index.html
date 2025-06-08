@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Random Password Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="mainBox">
+      <div class="text">Password Generator</div>
+
+      <!-- Customization Options -->
+      <div class="options">
+        <label>Password Length: <span id="lengthValue">10</span></label>
+        <input type="range" min="6" max="32" value="10" id="lengthSlider">
+        <div class="checkboxes">
+          <label><input type="checkbox" id="uppercase" checked> Uppercase</label>
+          <label><input type="checkbox" id="lowercase" checked> Lowercase</label>
+          <label><input type="checkbox" id="numbers" checked> Numbers</label>
+          <label><input type="checkbox" id="symbols" checked> Symbols</label>
+        </div>
+      </div>
+
+      <!-- Password Output -->
+      <div class="Pass">
+        <input class="PassGen" id="password" type="text" readonly />
+      </div>
+
+      <!-- Strength Meter -->
+      <div class="strength">
+        <span id="strengthText">Strength: N/A</span>
+        <div class="strength-bar" id="strengthBar"></div>
+      </div>
+
+      <!-- Buttons -->
+      <div class="button-container">
+        <div class="gen" onclick="genPassword();">Generate</div>
+        <div class="cpy" onclick="copyPassword();">Copy</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

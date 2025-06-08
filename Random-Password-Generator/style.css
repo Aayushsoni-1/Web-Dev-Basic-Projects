@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #0d0c1d;
+}
+
+.mainBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: auto;
+  width: 600px;
+  background-color: #1e1b3a;
+  border-radius: 10px;
+  padding-bottom: 30px;
+}
+
+.text {
+  color: #ff2e63;
+  font-size: 47px;
+  padding-top: 30px;
+  text-align: center;
+  font-family: 'Nunito';
+}
+
+/* Password Box */
+.Pass {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+}
+
+.Pass input {
+  text-align: center;
+  margin-top: 20px;
+  width: 350px;
+  height: 40px;
+  font-size: 18px;
+}
+
+/* Options */
+.options {
+  color: white;
+  font-family: Nunito;
+  padding: 20px;
+  text-align: center;
+}
+.options label {
+  display: block;
+  margin: 10px 0;
+  font-size: 18px;
+}
+.checkboxes {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.checkboxes label {
+  font-size: 16px;
+}
+input[type="range"] {
+  width: 60%;
+  margin: 10px auto;
+  display: block;
+}
+
+/* Strength Bar */
+.strength {
+  text-align: center;
+  margin-top: 20px;
+  font-family: Nunito;
+  color: white;
+}
+.strength-bar {
+  width: 0;
+  height: 10px;
+  background-color: red;
+  margin: 5px auto;
+  transition: width 0.3s, background-color 0.3s;
+}
+
+/* Buttons */
+.button-container {
+  gap: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.gen, .cpy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 50px;
+  border: 2px solid rgb(57, 225, 20);
+  text-align: center;
+  border-radius: 20px;
+  font-size: 22px;
+  color: white;
+  font-weight: 300;
+  transition: 0.3s ease;
+}
+
+.gen:hover, .cpy:hover {
+  cursor: pointer;
+  border: 2px solid grey;
+  color: black;
+  background-color: grey;
+}
+
