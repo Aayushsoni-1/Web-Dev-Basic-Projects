@@ -1,0 +1,15 @@
+ul{
+    height: 80px;
+    width: 100vw;
+    list-style: none;
+    background-color: black;
+    color: white ;
+    font-weight: 22px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+li{
+    margin-right: 50px;
+}
+
