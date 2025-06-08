@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="heading">
+        <h1>Welcome to the Game</h1>
+    </div>
+
+    <div class="msg">
+        "Alright, champions of chance 🎊, let's crank up the intensity shoot 🥳! Who's ready to claim victory?"
+    </div>
+
+    <div id="user_choice">Select Your Choice</div>
+
+    <div class="sections">
+        <div id="Rock" onclick="playGame(this.id)">
+            <img src="Images/Rock.png" alt="Rock">
+        </div>
+        <div id="Paper" onclick="playGame(this.id)">
+            <img src="Images/Paper.png" alt="Paper">
+        </div>
+        <div id="Scissor" onclick="playGame(this.id)">
+            <img src="Images/Scissor.png" alt="Scissor">
+        </div>
+    </div>
+
+    <div class="finale">
+        <div id="result">
+            <div id="round_result"></div>
+            <div id="scoreboard">
+                <p>👤 You: <span id="userScore">0</span></p>
+                <p>🤖 Computer: <span id="compScore">0</span></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Winner Modal -->
+    <div id="winnerModal" class="modal hidden">
+        <div class="modal-content">
+            <h2 id="winnerMessage"></h2>
+            <button onclick="restartGame()">Play Again</button>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

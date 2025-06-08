@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    font-family: sans-serif;
+}
+
+.heading > h1 {
+    text-align: center;
+    background-color: lightblue;
+    padding: 20px 0;
+}
+
+.msg {
+    color: white;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 22px;
+    padding: 0 10px;
+}
+
+#user_choice {
+    margin-top: 50px;
+    color: white;
+    font-size: 28px;
+    text-align: center;
+}
+
+.sections {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+#Rock, #Paper, #Scissor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 150px;
+    /* border-radius: 20px; */
+    color: white;
+    cursor: pointer;
+}
+
+#Rock {
+    background: rgb(255, 20, 147);
+}
+
+#Paper {
+    background: rgb(0, 191, 255);
+}
+
+#Scissor {
+    background: yellow;
+}
+
+#Rock img, #Paper img, #Scissor img {
+    border-radius: 20px;
+    width: 85%;
+    height: 85%;
+    object-fit: contain;
+    display: block;
+    padding: 5px;
+}
+
+
+#Rock:hover {
+    box-shadow: 0 0 20px 10px rgba(255, 20, 147, 0.8);
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+#Paper:hover {
+    box-shadow: 0 0 20px 10px rgba(0, 191, 255, 0.8);
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+#Scissor:hover {
+    box-shadow: 0 0 20px 10px rgba(255, 250, 50, 0.8);
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+#Rock:active, #Paper:active, #Scissor:active {
+    transform: scale(0.95);
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.6);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.finale {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 100px;
+    margin-top: 50px;
+}
+
+#result {
+    margin-left: 50px;
+    color: white;
+    font-size: 24px;
+    text-align: left;
+}
+
+#round_result {
+    margin-bottom: 20px;
+}
+
+#scoreboard {
+    font-size: 24px;
+    line-height: 1.6;
+    color: white;
+}
+
+#scoreboard p {
+    margin: 5px 0;
+}
+
+/* MODAL STYLES */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.modal-content {
+    background-color: white;
+    color: black;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 0 30px 10px rgba(255, 255, 255, 0.2);
+}
+
+.modal-content h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.modal-content button {
+    font-size: 20px;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 10px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+.modal-content button:hover {
+    background-color: #0056b3;
+}
+
+.hidden {
+    display: none;
+}
