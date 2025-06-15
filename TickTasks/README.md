@@ -34,3 +34,5 @@ A clean, minimal, and responsive To-Do app built using **React**, **TailwindCSS*
 ```bash
 git clone https://github.com/yourusername/ticktask.git
 cd ticktask
+npm install
+npm run dev
